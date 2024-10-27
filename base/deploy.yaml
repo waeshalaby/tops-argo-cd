@@ -1,0 +1,31 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: app-git
+  labels:
+    app: app-git
+    app.kubernetes.io/component: app-git
+    app.kubernetes.io/instance: app-git
+    app.kubernetes.io/name: app-git
+    app.openshift.io/runtime: java
+    app.openshift.io/runtime-version: openjdk-17-ubi8
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-git
+  template:
+    metadata:
+      labels:
+        app: app-git
+        deployment: app-git
+    spec:
+      containers:
+        - name: app-git
+          image: app-git
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+            - containerPort: 8443
+              protocol: TCP
+          resources: {}
