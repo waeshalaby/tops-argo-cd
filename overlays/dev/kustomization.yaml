@@ -1,8 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+
 resources:
   - ../../base
+
+
 images:
   - name: app-git
-    newName: image-registry.openshift-image-registry.svc:5000/easd-geoknw-dev/app-git
-    newTag: f873098
+    newName: image-registry.openshift-image-registry.svc:5000/easd-tops-dev/app-git
+    newTag: 01aa2bf
