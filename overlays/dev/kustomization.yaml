@@ -5,4 +5,4 @@ resources:
 images:
   - name: app-git
     newName: image-registry.openshift-image-registry.svc:5000/easd-tops-dev/app-git
-    newTag: f569072
+    newTag: d189065
