@@ -4,7 +4,6 @@ kind: Kustomization
 resources:
   - ../../base
 
-
 images:
   - name: app-git
     newName: image-registry.openshift-image-registry.svc:5000/easd-tops-dev/app-git
