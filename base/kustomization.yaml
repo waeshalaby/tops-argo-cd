@@ -4,8 +4,3 @@ resources:
   - service.yaml
   - deploy.yaml
   - route.yaml
-
-images:
-  - name: app-git
-    newName: image-registry.openshift-image-registry.svc:5000/easd-tops-dev/app-git
-    newTag: v1
